@@ -5,7 +5,6 @@ import bs4
 import requests
 from bs4 import BeautifulSoup
 
-
 # exercise 1 function
 def logger(function_in_work):
 
@@ -36,7 +35,7 @@ def logger(function_in_work):
     return information_for_log
 
 
-####### exercise 2
+####### exercise 2 function
 file_path = os.getcwd()
 
 def parametrized_decor(parameter):
@@ -66,13 +65,7 @@ def parametrized_decor(parameter):
         return new_function
     return decor
 
-
-
-
-
-
-########thing to try on the exerises
-
+######## function to try on the HW exerises
 @parametrized_decor(parameter= file_path)
 def calculate_salary(amount_in_a_year):
     amount_you_get_in_a_year = (amount_in_a_year * 12)
@@ -80,12 +73,10 @@ def calculate_salary(amount_in_a_year):
 
 calculate_salary(12000)
 
-
-############# another one
+############# another function to try on the HW exerises
 @logger
 def search_articles_on_habr(link):
     KEYWORDS = {'дизайн', 'фото', 'web', 'python', 'Big Data'}
-
     ret = requests.get(link)
     soup = BeautifulSoup(ret.text, 'html.parser')
     articles = soup.find_all('article')
@@ -98,7 +89,6 @@ def search_articles_on_habr(link):
             dates = article.find(class_='tm-article-snippet__datetime-published').time['datetime']
             print ('<', dates, '>', '-', '<', article.find('h2').text, '>', '-', '<', link, '>')
     return 'done you can see all the articles above'
-
 
 link_for_harb = 'https://habr.com/ru/all/'
 
