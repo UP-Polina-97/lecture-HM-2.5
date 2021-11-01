@@ -14,12 +14,13 @@ def logger(function_in_work):
         time_spend = int(time.time() - start)
         file_path_of_function = __file__
         file_path = os.getcwd()
+        results = function_in_work(*args, **kwargs)
         with open('log file.txt', 'a') as file:
             file.write(f'date and time of the call:{date_times } \n')
             file.write(f'call function: {function_in_work.__name__} '
-              f'time spend calling {time_spend} \n')
+                       f'time spend calling {time_spend} \n')
             file.write(f'arguments {args} {kwargs} in {function_in_work.__name__} \n')
-            file.write(f'results: {function_in_work(*args, **kwargs)} \n')
+            file.write(f'results: {results} \n')
             file.write('-' * 50)
             file.write(('\n'))
 
@@ -31,7 +32,8 @@ def logger(function_in_work):
         print(f'arguments {args} {kwargs} in {function_in_work.__name__}')
         print(f'results: {function_in_work(*args, **kwargs)} ')
         print('-' * 20)
-        return '\n'
+        print('\n')
+        return results
     return information_for_log
 
 
@@ -45,6 +47,7 @@ def parametrized_decor(parameter):
             start = time.time()
             date_times = datetime.datetime.now()
             time_spend = int(time.time() - start)
+            results = function_in_decor(*args, **kwargs)
             with open('log file_ex_2.txt', 'a') as file:
                 file.write(f'date and time of the call:{date_times} \n')
                 file.write(f'call function: {function_in_decor.__name__} '
@@ -60,12 +63,13 @@ def parametrized_decor(parameter):
             print(f'function recorded in {file_path_of_function}')
             print(f'arguments {args} {kwargs} in {function_in_decor.__name__}')
             print(f'results: {function_in_decor(*args, **kwargs)} ')
-            return '-' * 20
-
+            print('-' * 20)
+            return results
         return new_function
     return decor
 
 @parametrized_decor(file_path)
+#@logger
 def summator(x, y):
    return x + y
 

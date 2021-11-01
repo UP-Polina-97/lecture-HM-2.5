@@ -1,28 +1,15 @@
-date and time of the call:2021-11-01 09:28:29.614366 
+date and time of the call:2021-11-01 20:40:02.003373 
 call function: summator time spend calling 0 
 arguments (1, 2) {} in summator 
 results: 3 
 --------------------------------------------------
-date and time of the call:2021-11-01 09:28:29.614648 
+date and time of the call:2021-11-01 20:40:02.003651 
 call function: summator time spend calling 0 
 arguments (2, 3) {} in summator 
 results: 5 
 --------------------------------------------------
-date and time of the call:2021-11-01 09:28:29.615499 
+date and time of the call:2021-11-01 20:40:02.004696 
 call function: summator time spend calling 0 
-arguments (None, None) {} in summator 
-date and time of the call:2021-11-01 09:29:01.484727 
-call function: summator time spend calling 0 
-arguments (1, 2) {} in summator 
-results: 3 
---------------------------------------------------
-date and time of the call:2021-11-01 09:29:01.484982 
-call function: summator time spend calling 0 
-arguments (2, 3) {} in summator 
-results: 5 
---------------------------------------------------
-date and time of the call:2021-11-01 09:29:01.485880 
-call function: summator time spend calling 0 
-arguments ('--------------------', '--------------------') {} in summator 
-results: ---------------------------------------- 
+arguments (3, 5) {} in summator 
+results: 8 
 --------------------------------------------------

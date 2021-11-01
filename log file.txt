@@ -1,56 +1,15 @@
-
-date and time of the call:2021-10-22 14:58:50.021735 
-call function: calculate_salary time spend calling 0 
-arguments (12000,) {} in calculate_salary 
-results: This is your salary in a year: 144000 
+date and time of the call:2021-11-01 20:39:37.414748 
+call function: summator time spend calling 0 
+arguments (1, 2) {} in summator 
+results: 3 
 --------------------------------------------------
-date and time of the call:2021-10-22 14:58:50.022070 
-call function: search_articles_on_habr time spend calling 0 
-arguments ('https://habr.com/ru/all/',) {} in search_articles_on_habr 
-results: ('<', '2021-10-22T10:08:38.000Z', '>', '-', '<', 'Собеседование на позицию Data Engineer в X5: чего ждать и как лучше подготовиться (часть 2)', '>', '-', '<', 'https://habr.com/ru/company/X5Group/blog/584966/', '>') 
+date and time of the call:2021-11-01 20:39:37.415057 
+call function: summator time spend calling 0 
+arguments (2, 3) {} in summator 
+results: 5 
 --------------------------------------------------
-date and time of the call:2021-10-22 14:59:03.053008 
-call function: calculate_salary time spend calling 0 
-arguments (12000,) {} in calculate_salary 
-results: This is your salary in a year: 144000 
---------------------------------------------------
-date and time of the call:2021-10-22 14:59:03.053314 
-call function: search_articles_on_habr time spend calling 0 
-arguments ('https://habr.com/ru/all/',) {} in search_articles_on_habr 
-results: ('<', '2021-10-22T10:08:38.000Z', '>', '-', '<', 'Собеседование на позицию Data Engineer в X5: чего ждать и как лучше подготовиться (часть 2)', '>', '-', '<', 'https://habr.com/ru/company/X5Group/blog/584966/', '>\n') 
---------------------------------------------------
-date and time of the call:2021-10-22 14:59:49.513860 
-call function: calculate_salary time spend calling 0 
-arguments (12000,) {} in calculate_salary 
-results: This is your salary in a year: 144000 
---------------------------------------------------
-date and time of the call:2021-10-22 14:59:49.514312 
-call function: search_articles_on_habr time spend calling 0 
-arguments ('https://habr.com/ru/all/',) {} in search_articles_on_habr 
-results: ('<', '2021-10-22T09:43:07.000Z', '>', '-', '<', 'Data Science с нуля. Большая подборка курсов', '>', '-', '<', 'https://habr.com/ru/post/584964/', '>') 
---------------------------------------------------
-date and time of the call:2021-10-22 15:00:16.984389 
-call function: calculate_salary time spend calling 0 
-arguments (12000,) {} in calculate_salary 
-results: This is your salary in a year: 144000 
---------------------------------------------------
-date and time of the call:2021-10-22 15:00:16.984701 
-call function: search_articles_on_habr time spend calling 0 
-arguments ('https://habr.com/ru/all/',) {} in search_articles_on_habr 
-results:  
---------------------------------------------------
-date and time of the call:2021-10-22 15:00:40.139710 
-call function: calculate_salary time spend calling 0 
-arguments (12000,) {} in calculate_salary 
-results: This is your salary in a year: 144000 
---------------------------------------------------
-date and time of the call:2021-10-22 15:00:40.140063 
-call function: search_articles_on_habr time spend calling 0 
-arguments ('https://habr.com/ru/all/',) {} in search_articles_on_habr 
-results: done you can see all the articles above 
---------------------------------------------------
-date and time of the call:2021-10-30 11:25:56.961139 
-call function: search_articles_on_habr time spend calling 0 
-arguments ('https://habr.com/ru/all/',) {} in search_articles_on_habr 
-results: done you can see all the articles above 
+date and time of the call:2021-11-01 20:39:37.415874 
+call function: summator time spend calling 0 
+arguments (3, 5) {} in summator 
+results: 8 
 --------------------------------------------------
