@@ -1,5 +1,28 @@
-date and time of the call:2021-10-30 11:25:56.960764 
-call function: calculate_salary time spend calling 0 
-arguments (12000,) {} in calculate_salary 
-results: This is your salary in a year: 144000 
+date and time of the call:2021-11-01 09:28:29.614366 
+call function: summator time spend calling 0 
+arguments (1, 2) {} in summator 
+results: 3 
+--------------------------------------------------
+date and time of the call:2021-11-01 09:28:29.614648 
+call function: summator time spend calling 0 
+arguments (2, 3) {} in summator 
+results: 5 
+--------------------------------------------------
+date and time of the call:2021-11-01 09:28:29.615499 
+call function: summator time spend calling 0 
+arguments (None, None) {} in summator 
+date and time of the call:2021-11-01 09:29:01.484727 
+call function: summator time spend calling 0 
+arguments (1, 2) {} in summator 
+results: 3 
+--------------------------------------------------
+date and time of the call:2021-11-01 09:29:01.484982 
+call function: summator time spend calling 0 
+arguments (2, 3) {} in summator 
+results: 5 
+--------------------------------------------------
+date and time of the call:2021-11-01 09:29:01.485880 
+call function: summator time spend calling 0 
+arguments ('--------------------', '--------------------') {} in summator 
+results: ---------------------------------------- 
 --------------------------------------------------

@@ -60,37 +60,19 @@ def parametrized_decor(parameter):
             print(f'function recorded in {file_path_of_function}')
             print(f'arguments {args} {kwargs} in {function_in_decor.__name__}')
             print(f'results: {function_in_decor(*args, **kwargs)} ')
-            print('-' * 20)
-            return '\n'
+            return '-' * 20
+
         return new_function
     return decor
 
-######## function to try on the HW exerises
-@parametrized_decor(parameter= file_path)
-def calculate_salary(amount_in_a_year):
-    amount_you_get_in_a_year = (amount_in_a_year * 12)
-    return f"This is your salary in a year: {amount_you_get_in_a_year}"
+@parametrized_decor(file_path)
+def summator(x, y):
+   return x + y
 
-calculate_salary(12000)
+three = summator(1, 2)
+five = summator(2, 3)
 
-############# another function to try on the HW exerises
-@logger
-def search_articles_on_habr(link):
-    KEYWORDS = {'дизайн', 'фото', 'web', 'python', 'Big Data'}
-    ret = requests.get(link)
-    soup = BeautifulSoup(ret.text, 'html.parser')
-    articles = soup.find_all('article')
-    for article in articles:
-        hubs = article.find_all(class_='tm-article-snippet__hubs-item')
-        hubs = set(hub.find('span').text for hub in hubs)
-        if KEYWORDS & hubs:
-            href = article.find(class_='tm-article-snippet__title-link').attrs['href']
-            link = 'https://habr.com' + href
-            dates = article.find(class_='tm-article-snippet__datetime-published').time['datetime']
-            print ('<', dates, '>', '-', '<', article.find('h2').text, '>', '-', '<', link, '>')
-    return 'done you can see all the articles above'
+result = summator(three, five)
 
-link_for_harb = 'https://habr.com/ru/all/'
-
-search_articles_on_habr(link_for_harb)
-
+print('result: ', result)
+print('result type: ', type(result))
